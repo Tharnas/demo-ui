@@ -1,0 +1,9 @@
+<h1>Products</h1>
+
+<ul>
+    <li *ngFor="let product of products | async">
+        <a [routerLink]="['/product', product.id]">{{product.name}} - {{product.description}}</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>
