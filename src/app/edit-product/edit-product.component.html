@@ -1,12 +1,21 @@
-<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
-    <label for="name">Name: </label>
-    <input type="text" id="name" formControlName="name">
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="demo-ui-form">
+    <mat-form-field class="demo-ui-full-width">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput formControlName="name" placeholder="Name des Produkts">
+        <mat-error *ngIf="productForm.controls['name'].touched && productForm.controls['name'].hasError('required')">
+            Der Name ist ein Pflichtfeld.
+        </mat-error>
+    </mat-form-field>
 
-    <label for="description">Beschreibung: </label>
-    <input type="text" id="description" formControlName="description">
+    <mat-form-field class="demo-ui-full-width">
+        <mat-label>Beschreibung</mat-label>
+        <input type="text" matInput formControlName="description" placeholder="Beschreibung des Produkts">
+    </mat-form-field>
 
-    <label for="price">Preis: </label>
-    <input type="number" id="price" formControlName="price" step="0.01">
+    <mat-form-field class="demo-ui-full-width">
+        <mat-label>Preis</mat-label>
+        <input type="number" matInput formControlName="price" placeholder="Preis des Produkts" step="0.01">
+    </mat-form-field>
 
-    <input type="submit" value="Speichern" [disabled]="!productForm.valid">
+    <button mat-flat-button color="primary" [disabled]="!productForm.valid">Speichern</button>
 </form>

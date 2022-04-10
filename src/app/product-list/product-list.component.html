@@ -1,9 +1,13 @@
 <h1>Products</h1>
 
-<ul>
-    <li *ngFor="let product of products | async">
-        <a [routerLink]="['/product', product.id]">{{product.name}} - {{product.description}}</a>
-    </li>
-</ul>
+<div class="product-list-body">
+    <mat-nav-list>
+        <a mat-list-item [routerLink]="['/product', product.id]" *ngFor="let product of products | async">
+            <h4 mat-line>{{product.name}}</h4>
+            <p mat-line> {{product.description}} </p>
+        </a>
+    </mat-nav-list>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+</div>
+
