@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs';
 import { Product } from '../models/product.model';
-import { ProductService } from '../Services/product.service';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-edit-product',
