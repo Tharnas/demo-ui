@@ -4,8 +4,6 @@ Dieses Repository soll dabei helfen, eine kleine web Applikation mit Angular zu 
 
 ## Voraussetzungen
 
----------
-
 * Der Befehl **ng --version** darf keinen Fehler zurückgeben und sollte so ähnlich aussehen:
   ![ng --version](/docs/ng_--version.png)
 
@@ -23,30 +21,26 @@ Dieses Repository soll dabei helfen, eine kleine web Applikation mit Angular zu 
 
 ## Repository von Github clonen und starten
 
----------
-
 Um dieses Repository von Github herunterzuladen und dies zu starten, müssen folgende Schritte ausgeführt werden:
 
 1. In einer Konsole (CMD oder PowerShell) in ein Arbeitsverzeichnis navigieren (mit **cd** kann das Verzeichnis gewechselt werden.)
 
-1. Mit **git clone <https://github.com/Tharnas/demo-ui.git>** kann dieses Repository auf den lokalen Computer heruntergeladen werden. Hierbei wird ein Ordner im aktuellen Verzeichnis mit **demo-ui** erstellt.
+1. Mit `git clone https://github.com/Tharnas/demo-ui.git` kann dieses Repository auf den lokalen Computer heruntergeladen werden. Hierbei wird ein Ordner im aktuellen Verzeichnis mit **demo-ui** erstellt.
 Der Link für das Repository findet man, wenn man oben auf die Grüne **Code** Schaltfläche klickt.
 ![Github Repository Link](/docs/github_repository_link.png)
 
-1. Mit **cd demo-ui** kann in dieses Verzeichnis gewechselt werden.
+1. Mit `cd demo-ui` kann in dieses Verzeichnis gewechselt werden.
 
-1. Anschließen kann mit **code .** das Visual Studio Code mit dem aktuellen Verzeichnis gestartet werden.
+1. Anschließen kann mit `code .` das Visual Studio Code mit dem aktuellen Verzeichnis gestartet werden.
 
-1. Durch das Kommando **npm install** (oder kurz **npm i**) werden alle benötigten Abhängigkeiten installiert.
+1. Durch das Kommando `npm install` (oder kurz `npm i`) werden alle benötigten Abhängigkeiten installiert.
 
-1. Mit **ng serve** (oder kurz **ng s**) wird das Angular Projekt gebaut, bereitgestellt und erneut gebaut, wenn Änderungen gemacht werden.
+1. Mit `ng serve` (oder kurz `ng s`) wird das Angular Projekt gebaut, bereitgestellt und erneut gebaut, wenn Änderungen gemacht werden.
 
 1. Wenn nun im Browser <http://localhost:4200> aufgerufen wird, wird folgende Seite dargestellt:
 ![http://localhost:4200](/docs/localhost_4200.png)
 
 ## Ein neues Projekt aufsetzen
-
----------
 
 Um ein Angular Projekt zu erstellen, muss folgendes Kommando in einer Konsole (cmd oder PowerShell) ausgeführt werden:
 
@@ -54,16 +48,16 @@ Um ein Angular Projekt zu erstellen, muss folgendes Kommando in einer Konsole (c
 
 Dokumentation: <https://angular.io/cli/new>
 
-Bei der Frage, ob Angular routing verwendet werden möchte, kann dies mit **y** bestätigt werden.
-Anschließend kann die gewünschte Sprache für Styles ausgewählt werden. Für kleinere Projekte ist **CSS** ausreichen.
+Bei der Frage, ob Angular routing verwendet werden möchte, kann dies mit `y` bestätigt werden.
+Anschließend kann die gewünschte Sprache für Styles ausgewählt werden. Für kleinere Projekte ist `CSS` ausreichen.
 
 Nun wird das Projekt erstellt und alle Abhängigkeiten installiert.
 
 ### **Projekt öffnen und ausprobieren**
 
-Um in das Verzeichnis des neu angelegten Projektes zu navigieren, kann **cd demo-ui** eingegeben werden. Mit **code .** wird das Visual Studio Code gestartet.
+Um in das Verzeichnis des neu angelegten Projektes zu navigieren, kann `cd demo-ui` eingegeben werden. Mit `code .` wird das Visual Studio Code gestartet.
 
-Mit **ng serve** (oder kurz **ng s**) wird das Angular Projekt gebaut, bereitgestellt und erneut gebaut, wenn Änderungen gemacht werden. Anschließen kann über die URL <http://localhost:4200> im Browser die Seite betrachtet werden.
+Mit `ng serve` (oder kurz `ng s`) wird das Angular Projekt gebaut, bereitgestellt und erneut gebaut, wenn Änderungen gemacht werden. Anschließen kann über die URL <http://localhost:4200> im Browser die Seite betrachtet werden.
 
 ### **Erste Komponenten erstellen**
 
