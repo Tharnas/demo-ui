@@ -4,7 +4,7 @@ Dieses Repository soll dabei helfen, eine kleine web Applikation mit Angular zu 
 
 ## Voraussetzungen
 
-* Der Befehl **ng --version** darf keinen Fehler zurückgeben und sollte so ähnlich aussehen:
+* Der Befehl **ng version** darf keinen Fehler zurückgeben und sollte so ähnlich aussehen:
   ![ng --version](/docs/ng_--version.png)
 
   Für mehr Informationen: <https://angular.io/cli>
